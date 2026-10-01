@@ -25,7 +25,12 @@ export function Finale({ progress, onName, onMap }) {
       {shown && name ? (
         <article className="certificate" aria-label="شهادة شكر وتقدير">
           <div className="cert-frame">
+            <p className="official-line">المملكة العربية السعودية</p>
+            <p className="official-line">وزارة التعليم</p>
+            <p className="official-line">الإدارة العامة للتعليم بمنطقة مكة المكرمة</p>
             <p className="cert-school">مجمع حي الرياض</p>
+            <p className="cert-kicker">إعداد الموجهة الطلابية: خديجة الكعبي</p>
+            <p className="cert-kicker">مديرة المدرسة: ابتسام سفر الغامدي</p>
             <p className="cert-kicker">أبطال القيم</p>
             <h2>شهادة شكر وتقدير</h2>
             <p className="cert-name">{name}</p>

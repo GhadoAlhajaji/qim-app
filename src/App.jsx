@@ -51,6 +51,12 @@ export default function App() {
     <div className="app">
       <a className="skip" href="#main">تجاوزي إلى المحتوى</a>
       <header className="topbar">
+        <div className="site-heading">
+          <p>المملكة العربية السعودية</p>
+          <p>وزارة التعليم</p>
+          <p>الإدارة العامة للتعليم بمنطقة مكة المكرمة</p>
+          <p>مجمع حي الرياض</p>
+        </div>
         <div className="wrap topbar-inner">
           <button type="button" className="brand" onClick={() => setView('home')}>
             <span className="logo" aria-hidden="true" />

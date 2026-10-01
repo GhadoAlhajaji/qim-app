@@ -69,13 +69,25 @@ img, svg { max-width: 100%; }
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
+.site-heading {
+  text-align: center;
+  padding: 4px 12px 0;
+}
+.site-heading p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  color: #14382a;
+}
+.site-heading p:last-child { color: #0e6b38; }
 .topbar-inner {
-  min-height: 74px;
+  min-height: 52px;
   display: flex;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
-  padding: 8px 0;
+  padding: 2px 0 6px;
 }
 .brand {
   display: flex;
@@ -274,8 +286,15 @@ img, svg { max-width: 100%; }
 }
 .cast-figure { flex: 0 0 auto; margin-inline: -4px; text-align: center; font-weight: 800; color: #14382a; }
 .title-block { align-self: center; }
-.school-name {
+.official-line {
   margin: 0;
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.school-name {
+  margin: 0.25rem 0 0;
   color: var(--green);
   font-weight: 800;
   font-size: 1.15rem;
@@ -337,7 +356,7 @@ img, svg { max-width: 100%; }
 }
 .map-board {
   position: relative;
-  width: min(100%, 860px, calc((100dvh - 168px) * 4 / 3));
+  width: min(100%, 860px, calc((100dvh - 200px) * 4 / 3));
   aspect-ratio: 4 / 3;
   container-type: size;
 }
@@ -1004,6 +1023,7 @@ dialog.modal::backdrop { background: rgba(24, 16, 8, 0.48); }
 @media (max-width: 560px) {
   .slots, .bins-2, .bins-3, .match { grid-template-columns: 1fr; }
   .topbar nav { margin-inline-start: 0; }
+  .site-heading p { font-size: 0.68rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -31,8 +31,8 @@ export function Home({ progress, onStart, onMap, onFinale }) {
           </div>
         </div>
         <div className="title-block panel">
-          <p className="school-name">مجمع حي الرياض</p>
           <p className="credit-line">إعداد الموجهة الطلابية: خديجة الكعبي</p>
+          <p className="credit-line">مديرة المدرسة: ابتسام سفر الغامدي</p>
           <h1 className="display">أبطال القيم</h1>
           <p className="lead">مغامرة صغيرة... وقيم عظيمة!</p>
           <p className="progress-line">
